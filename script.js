@@ -36,6 +36,7 @@ questions.forEach((q, qi) => {
   });
   html += `</div>`;
   div.innerHTML = html;
+
   quizContainer.appendChild(div);
 });
 
@@ -46,6 +47,7 @@ document.querySelectorAll(".options button").forEach((btn) => {
       .querySelectorAll(`button[data-q="${qid}"]`)
       .forEach((b) => b.classList.remove("selected"));
     this.classList.add("selected");
+
     const answered = document.querySelectorAll(
       ".options button.selected"
     ).length;

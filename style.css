@@ -3,8 +3,17 @@ body {
   padding: 0;
   font-family: Arial, sans-serif;
   background: #0a0a0a;
-  overflow-x: hidden;
   color: white;
+  overflow-x: hidden;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 30px;
+  font-family: "Bangers", cursive;
+  font-size: 3em;
+  color: #ff4655;
+  text-shadow: 0 0 4px #ff4655, 0 0 8px #4aa1ff;
 }
 
 .container {
@@ -22,7 +31,6 @@ body {
   margin-bottom: 25px;
   padding-bottom: 20px;
   border-bottom: 2px solid #333;
-  font-size: 1.1em;
 }
 
 .options button {
@@ -91,27 +99,18 @@ body {
   animation: heroReveal 1s ease-out forwards;
 }
 
-h1 {
-  text-align: center;
-  margin-top: 30px;
-  font-family: "Bangers", cursive;
-  font-size: 3em;
-  color: #ff4655;
-  text-shadow: 0 0 4px #ff4655, 0 0 8px #4aa1ff; /* reduced glow */
-}
-
 #resultScreen h2 {
   font-family: "Bangers", cursive;
   font-size: 2.5em;
   color: #ffd700;
-  text-shadow: 0 0 4px #ffd700, 0 0 8px #ff4655; /* reduced glow */
+  text-shadow: 0 0 4px #ffd700, 0 0 8px #ff4655;
 }
 
 #result {
   margin-top: 20px;
   font-size: 1.5em;
   color: #ff4655;
-  text-shadow: 0 0 4px #4aa1ff; /* reduced glow */
+  text-shadow: 0 0 4px #4aa1ff;
 }
 
 #progress {
@@ -151,5 +150,39 @@ canvas#particles {
   100% {
     opacity: 1;
     transform: scale(1) rotate(0);
+  }
+}
+
+@media (max-width: 1000px) {
+  h1 {
+    font-size: 2em;
+    margin: 20px 10px;
+  }
+
+  .container {
+    padding: 15px;
+    margin: 15px 10px;
+  }
+
+  .question {
+    font-size: 1.5em;
+    min-height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 20px 0;
+    border-bottom: 1px solid #444;
+  }
+
+  .options button {
+    width: 100%;
+    font-size: 1.3em;
+    padding: 15px;
+    margin: 8px 0;
+  }
+
+  #submitBtn {
+    font-size: 1.5em;
+    padding: 20px;
   }
 }
