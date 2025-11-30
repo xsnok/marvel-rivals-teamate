@@ -1,14 +1,14 @@
 const questions = [
   "I ping enemy positions instead of expecting teammates to read my mind.",
-  "I don’t instantly blame matchmaking or teammates when I die.",
-  "I switch heroes when my pick isn’t working.",
-  "I know when to push the payload… and when to STOP.",
-  "I don’t dive 1v5 just because my ultimate is ready.",
-  "I revive teammates even if they're playing a hero I hate.",
-  "When I hear 'Group up!', I actually group up.",
-  "I don’t insta-lock my main and refuse team comp.",
-  "I don’t chase kills so hard that I forget the objective.",
-  "I adapt my build instead of using the same thing every match.",
+  "I don't instantly blame matchmaking or teammates when I lose.",
+  "I switch heroes when my pick isn't working.",
+  "I know when to stay on point and when to run away.",
+  "I don't dive 1v6 just because my ultimate is ready.",
+  "I help teammates even if they're toxic.",
+  "I call out when I'm going to ult",
+  "I don't insta-lock my main and I play around the team comp.",
+  "I don't chase kills so hard that I forget the objective.",
+  "I adapt my to my team comp instead of doing the same thing every match.",
   "I stay until the end even if the match is going badly.",
   "I say 'gg' even when my team gets destroyed.",
 ];
@@ -78,8 +78,7 @@ submit.addEventListener("click", function () {
     tier = "🟩 S-Tier Teammate — Your team thanks you. Even the randoms.";
   else if (total >= 33) tier = "🟦 A-Tier Reliable — You carry your weight.";
   else if (total >= 25) tier = "🟨 B-Tier Decent — You’re fine… unless tilted.";
-  else if (total >= 17)
-    tier = "🟧 C-Tier Chaos Gremlin — You help… by accident.";
+  else if (total >= 17) tier = "🟧 C-Tier Teammate — You help… by accident.";
   else if (total >= 9)
     tier = "🟥 D-Tier Liability — You might be the reason your team is losing.";
   else tier = "⬛ F-Tier Menace — Matchmaker cries when you queue.";
